@@ -25,7 +25,8 @@ jobs:
             git clone http://github.com/root-project/root.git
             mkdir root_build
             cd root_build
-            sudo apt-get install cmake
+            sudo apt-get update
+            sudo apt-get -y install cmake
             cmake ../root
             make -j8
             source ../root/bin/thisroot.sh
