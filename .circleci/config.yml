@@ -39,10 +39,9 @@ jobs:
       - run:
           name: run tests
           command: |
-          cd ..
-          source run_tests.sh
+            cd ..
+            source run_tests.sh
 
       - store_artifacts:
           path: test-reports
           destination: test-reports
-          
